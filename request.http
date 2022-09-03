@@ -1,0 +1,29 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Caderno",
+    "price": 15
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/14ad3332-ab01-44fc-bec6-3426620d2f23
+
+###
+PUT http://localhost:4002/products/a107b25c-d891-44b4-9160-eb235b760542
+content-type: application/json
+
+{
+    "name": "Caderno 96 folhas",
+    "price": 12
+}
+
+###
+DELETE  http://localhost:4002/products/9b7c166c-49fa-4270-9fa8-d3cf2fddab48
+content-type: application/json
+
